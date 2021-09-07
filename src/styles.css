@@ -36,6 +36,11 @@ section .weather-description {
   margin-top: 15px;
 }
 
+#icon {
+  display: block;
+  float: right;
+}
+
 section .weather-description i {
   display: block;
   position: relative;
