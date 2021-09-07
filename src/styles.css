@@ -89,7 +89,10 @@ span.temperature small {
 .city-location,
 .greeting {
   text-align: left;
-  text-transform: capitalize;
+}
+
+.col-5::first-letter{
+ text-transform: capitalize;
 }
 
 .card {
