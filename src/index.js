@@ -1,5 +1,4 @@
 function formatDate(date) {
-  let date = new Date (date);
   let days = [
     "Sunday",
     "Monday",
@@ -82,6 +81,7 @@ let currentLocationButton = document.querySelector("#current-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 citySearch("Copenhagen");
+debugger;
 
 //Celsius and Fahrenheit
 function convertCelsius(event) {
