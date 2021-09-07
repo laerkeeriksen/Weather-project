@@ -1,4 +1,5 @@
 function formatDate(date) {
+  let date = new Date (date);
   let days = [
     "Sunday",
     "Monday",
@@ -26,9 +27,7 @@ function formatDate(date) {
   return formattedDate;
 }
 
-let currentTime = new Date();
-let currentDate = document.querySelector("#date-and-time");
-currentDate.innerHTML = `${formatDate(currentTime)}`;
+
 
 function displayWeather(response) {
   let temp = Math.round(response.data.main.temp);
@@ -42,6 +41,10 @@ function displayWeather(response) {
   let shortDescription = response.data.weather[0].description;
   let shortDescriptionDisplay = document.querySelector(".weather-display");
   shortDescriptionDisplay.innerHTML = shortDescription;
+
+  let currentTime = new Date(response.data.dt * 1000);
+  let currentDate = document.querySelector("#date-and-time");
+  currentDate.innerHTML = `${formatDate(currentTime)}`;
 }
 
 function citySearch(city) {

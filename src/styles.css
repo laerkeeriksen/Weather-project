@@ -92,7 +92,7 @@ span.temperature small {
   display: block;
 }
 
-.col-5::first-letter {
+.col-5:first-letter {
   text-transform: capitalize;
 }
 
