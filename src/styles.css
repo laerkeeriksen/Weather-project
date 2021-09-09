@@ -24,9 +24,10 @@ input.weather-search {
 }
 
 input.search-button {
+  display: block;
+  width: 95%;
   background-color: #bde0fe44;
   border: 1px solid #bde0fe;
-  width: 100%;
   padding: 5px 15px;
   border-radius: 10px;
   box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
