@@ -80,7 +80,7 @@ span.temperature small {
 
 #tempUnits a {
   text-decoration: none;
-  color: #ec6f4c9c;
+  color: black;
 }
 
 #tempUnits :hover {
@@ -123,4 +123,22 @@ span.temperature small {
 
 .signature a {
   color: #ec6f4c9c;
+}
+
+#celsius.active {
+  color: #ec6f4c9c;
+  cursor: default;
+}
+
+#fahrenheit.active {
+  color: #ec6f4c9c;
+  cursor: default;
+}
+
+#fahrenheit.active:hover {
+  text-decoration: none;
+}
+
+#celsius.active:hover {
+  text-decoration: none;
 }

@@ -90,12 +90,16 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 
 function convertCelsius(event) {
   event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
   let celsiusValue = document.querySelector("#temperature");
   celsiusValue.innerHTML = Math.round(celsiusTemperature);
 }
 
 function convertFahrenheit(event) {
   event.preventDefault();
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
   let fahrenheitElement = document.querySelector("#temperature");
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   fahrenheitElement.innerHTML = Math.round(fahrenheitTemperature);
@@ -109,4 +113,5 @@ fahrenheitLink.addEventListener("click", convertFahrenheit);
 
 let celsiusTemperature = null;
 
-citySearch("Copenhagen");
+citySearch("Madrid");
+fahrenheitLink.classList.remove("active");
