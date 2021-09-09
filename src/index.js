@@ -43,7 +43,7 @@ function displayWeather(response) {
   let currentDate = document.querySelector("#date-and-time");
   currentDate.innerHTML = `${formatDate(currentTime)}`;
 
-  let iconElement = document.querySelector(".image-weather-icon");
+  let iconElement = document.querySelector("#weatherIcon");
   if (response.data.weather[0].description.includes("overcast clouds")) {
     iconElement.innerHTML = "H";
   }
