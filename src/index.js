@@ -27,9 +27,10 @@ function formatDate(date) {
 }
 
 function displayWeather(response) {
-  let temp = Math.round(response.data.main.temp);
+  let celsiusTemperature = response.data.main.temp;
+
   let temperatureDisplay = document.querySelector("#temperature");
-  temperatureDisplay.innerHTML = temp;
+  temperatureDisplay.innerHTML = Math.round(celsiusTemperature);
 
   let cityName = response.data.name;
   let cityNameDisplay = document.querySelector("#city");
@@ -85,24 +86,27 @@ function getCurrentLocation(event) {
 let currentLocationButton = document.querySelector("#current-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-citySearch("Copenhagen");
-debugger;
-
 //Celsius and Fahrenheit
-function convertCelsius(event) {
-  event.preventDefault();
-  let celsiusValue = document.querySelector("#temperature");
-  celsiusValue.innerHTML = "24";
-}
+
+//function convertCelsius(event) {
+//event.preventDefault();
+//let celsiusValue = document.querySelector("#temperature");
+//celsiusValue.innerHTML = "24";
+//}
 
 function convertFahrenheit(event) {
   event.preventDefault();
-  let fahrenheitValue = document.querySelector("#temperature");
-  fahrenheitValue.innerHTML = "75";
+  let fahrenheitElement = document.querySelector("#temperature");
+  let fahrenheitTemperature = `(${celsiusTemperature} * 9) / 5 + 32`;
+  fahrenheitElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
-let celsiusLink = document.querySelector("#celsius");
-celsiusLink.addEventListener("click", convertCelsius);
+//let celsiusLink = document.querySelector("#celsius");
+//celsiusLink.addEventListener("click", convertCelsius);
 
 let fahrenheitLink = document.querySelector("#fahrenheit");
 fahrenheitLink.addEventListener("click", convertFahrenheit);
+
+let celsiusTemperature = null;
+
+citySearch("Copenhagen");
