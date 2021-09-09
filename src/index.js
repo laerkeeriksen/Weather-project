@@ -21,7 +21,7 @@ function formatDate(date) {
     currentMin = `0${currentMin}`;
   }
 
-  let formattedDate = `${currentDate} ${currentHour}:${currentMin}`;
+  let formattedDate = `Last updated: ${currentDate} ${currentHour}:${currentMin}`;
 
   return formattedDate;
 }
@@ -43,12 +43,10 @@ function displayWeather(response) {
   let currentDate = document.querySelector("#date-and-time");
   currentDate.innerHTML = `${formatDate(currentTime)}`;
 
-  let iconElement = document.querySelector("#icon");
-  iconElement.setAttribute(
-    "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-  );
-  iconElement.setAttribute("alt", response.data.weather[0].description);
+  let iconElement = document.querySelector("#weatherIcon");
+  if (response.data.weather[0].description.includes("overcast clouds")) {
+    iconElement.innerHTML = "H";
+  }
 }
 
 function citySearch(city) {
