@@ -17,8 +17,8 @@ input.weather-search {
   display: block;
   width: 100%;
   opacity: 0.8;
-  background-color: #bde0fe44;
-  border: 1px solid #bde0fe;
+  background-color: #ec6f4c9c;
+  border: 1px solid #ec6e4c;
   border-radius: 10px;
   padding: 5px 15px;
 }
@@ -26,8 +26,8 @@ input.weather-search {
 input.search-button {
   display: block;
   width: 95%;
-  background-color: #bde0fe44;
-  border: 1px solid #bde0fe;
+  background-color: #ec6f4c9c;
+  border: 1px solid #ec6e4c;
   padding: 5px 15px;
   border-radius: 10px;
   box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
@@ -47,14 +47,14 @@ section .weather-description i {
   position: relative;
   text-align: right;
   font-size: 100px;
-  color: #a2d2ffd5;
+  color: #ec6f4c9c;
 }
 
 section .weather-description .degrees {
   text-align: left;
   display: block;
   font-size: 50px;
-  color: #a2d2ffd5;
+  color: #ec6f4c9c;
 }
 
 h2 {
@@ -65,11 +65,11 @@ section .weather-forecast i {
   display: block;
   margin: 0 auto;
   font-size: 35px;
-  color: #a2d2ff83;
+  color: #ec6f4c9c;
 }
 
 span.temperature small {
-  color: #a2d2ff;
+  color: #ec6f4c9c;
   padding-left: 5%;
 }
 
@@ -80,7 +80,7 @@ span.temperature small {
 
 #tempUnits a {
   text-decoration: none;
-  color: #a2d2ffd5;
+  color: #ec6f4c9c;
 }
 
 #tempUnits :hover {
@@ -103,8 +103,8 @@ span.temperature small {
 }
 
 .card {
-  background-color: #bde0fe44;
-  border: 1px solid #bde0fe;
+  background-color: #ec6f4c9c;
+  border: 1px solid #ec6e4c;
   border-radius: 10px;
   box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
   margin-top: 20px;
@@ -119,4 +119,8 @@ span.temperature small {
   text-align: center;
   opacity: 0.5;
   font-family: monospace;
+}
+
+.signature a {
+  color: #ec6f4c9c;
 }
