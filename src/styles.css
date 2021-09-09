@@ -36,7 +36,7 @@ section .weather-description {
   margin-top: 15px;
 }
 
-#icon {
+#weatherIcon {
   display: block;
   float: right;
 }
