@@ -61,7 +61,7 @@ h2 {
   font-size: 1.4em;
 }
 
-section .weather-forecast i {
+.forecast-img {
   display: block;
   margin: 0 auto;
   font-size: 35px;
