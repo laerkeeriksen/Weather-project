@@ -40,6 +40,7 @@ section .weather-description {
 #weatherIcon {
   display: block;
   float: right;
+  width: 120px;
 }
 
 section .weather-description i {
@@ -55,10 +56,6 @@ section .weather-description .degrees {
   display: block;
   font-size: 50px;
   color: #ec6f4c9c;
-}
-
-h2 {
-  font-size: 1.4em;
 }
 
 .forecast-img {
@@ -83,8 +80,7 @@ span.temperature small {
 }
 
 .weather-display,
-.city-location,
-.greeting {
+.city-location {
   text-align: left;
   display: block;
 }
