@@ -97,6 +97,11 @@ function displayWeather(response) {
   let shortDescriptionDisplay = document.querySelector(".weather-display");
   shortDescriptionDisplay.innerHTML = shortDescription;
 
+  let windspeed = Math.round(response.data.wind.speed);
+  console.log(windspeed);
+  let windspeedElement = document.querySelector("#windspeed");
+  windspeedElement.innerHTML = `wind: ${windspeed} m/s`;
+
   let currentTime = new Date(response.data.dt * 1000);
   let currentDate = document.querySelector("#date-and-time");
   currentDate.innerHTML = `${formatDate(currentTime)}`;
