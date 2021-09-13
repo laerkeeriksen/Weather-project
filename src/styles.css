@@ -37,12 +37,6 @@ section .weather-description {
   margin-top: 15px;
 }
 
-#weatherIcon {
-  display: block;
-  float: right;
-  width: 120px;
-}
-
 section .weather-description i {
   display: block;
   position: relative;
@@ -58,16 +52,15 @@ section .weather-description .degrees {
   color: #ec6f4c9c;
 }
 
-.forecast-img {
-  display: block;
-  margin: 0 auto;
-  font-size: 35px;
-  color: #ec6f4c9c;
-}
-
 span.temperature small {
   color: #ec6f4c9c;
   padding-left: 5%;
+}
+
+#weatherIcon {
+  display: block;
+  float: right;
+  width: 120px;
 }
 
 #tempUnits {
@@ -77,6 +70,13 @@ span.temperature small {
 
 #date-and-time {
   opacity: 0.3;
+}
+
+.forecast-img {
+  display: block;
+  margin: 0 auto;
+  font-size: 35px;
+  color: #ec6f4c9c;
 }
 
 .col-3 {
