@@ -49,11 +49,11 @@ section .weather-description .degrees {
   text-align: left;
   display: block;
   font-size: 50px;
-  color: #ec6f4c9c;
+  color: #ec6e4c;
 }
 
 span.temperature small {
-  color: #ec6f4c9c;
+  color: #ec6e4c;
   padding-left: 5%;
 }
 
@@ -66,6 +66,7 @@ span.temperature small {
 #tempUnits {
   font-size: 15px;
   vertical-align: 100%;
+  color: #ec6e4c;
 }
 
 #date-and-time {
