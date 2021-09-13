@@ -145,32 +145,4 @@ function getCurrentLocation(event) {
 let currentLocationButton = document.querySelector("#current-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-//Celsius and Fahrenheit
-
-function convertCelsius(event) {
-  event.preventDefault();
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-  let celsiusValue = document.querySelector("#temperature");
-  celsiusValue.innerHTML = Math.round(celsiusTemperature);
-}
-
-function convertFahrenheit(event) {
-  event.preventDefault();
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  let fahrenheitElement = document.querySelector("#temperature");
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  fahrenheitElement.innerHTML = Math.round(fahrenheitTemperature);
-}
-
-let celsiusLink = document.querySelector("#celsius");
-celsiusLink.addEventListener("click", convertCelsius);
-
-let fahrenheitLink = document.querySelector("#fahrenheit");
-fahrenheitLink.addEventListener("click", convertFahrenheit);
-
-let celsiusTemperature = null;
-
 citySearch("Madrid");
-fahrenheitLink.classList.remove("active");

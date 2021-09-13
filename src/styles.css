@@ -78,15 +78,6 @@ span.temperature small {
   vertical-align: 100%;
 }
 
-#tempUnits a {
-  text-decoration: none;
-  color: black;
-}
-
-#tempUnits :hover {
-  text-decoration: underline;
-}
-
 .col-3 {
   padding: 0;
 }
@@ -123,22 +114,4 @@ span.temperature small {
 
 .signature a {
   color: #ec6f4c9c;
-}
-
-#celsius.active {
-  color: #ec6f4c9c;
-  cursor: default;
-}
-
-#fahrenheit.active {
-  color: #ec6f4c9c;
-  cursor: default;
-}
-
-#fahrenheit.active:hover {
-  text-decoration: none;
-}
-
-#celsius.active:hover {
-  text-decoration: none;
 }
