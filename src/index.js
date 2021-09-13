@@ -26,6 +26,32 @@ function formatDate(date) {
   return formattedDate;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col">
+              <div class="card">
+                <div class="card-body">${day}</div>
+                <i class="fas fa-cloud-sun" class="image-weather-icon"></i>
+                <div class="card-body">
+                  <span class="temperature" class="temperature-max"
+                    >22°<small class="temperature-min">10°</small></span
+                  >
+                </div>
+              </div>
+            </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log("Hello");
+}
+
 function displayWeather(response) {
   celsiusTemperature = response.data.main.temp;
 
@@ -115,3 +141,5 @@ let celsiusTemperature = null;
 
 citySearch("Madrid");
 fahrenheitLink.classList.remove("active");
+
+displayForecast();
