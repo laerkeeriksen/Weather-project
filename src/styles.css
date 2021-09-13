@@ -75,6 +75,10 @@ span.temperature small {
   vertical-align: 100%;
 }
 
+#date-and-time {
+  opacity: 0.3;
+}
+
 .col-3 {
   padding: 0;
 }
@@ -83,6 +87,7 @@ span.temperature small {
 .city-location {
   text-align: left;
   display: block;
+  margin: 0;
 }
 
 .col-5:first-letter {
